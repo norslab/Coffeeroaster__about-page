@@ -1,0 +1,118 @@
+#location {
+    margin-bottom: 168px;
+}
+
+.location__container {
+    max-width: 1085px;
+}
+
+.location__title {
+    font-family: $font;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888f;
+    margin-bottom: 72px;
+}
+
+.location__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location__item {
+    max-width: 285px;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 41px;
+        height: 49px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/location-1.svg);
+        margin-bottom: 46px;
+    }
+
+    &:nth-child(1)::before {
+        background-image: url(../img/location-1.svg);
+    }
+
+    &:nth-child(2)::before {
+        background-image: url(../img/location-2.svg);
+        width: 52px;
+        height: 50px;
+    }
+
+    &:nth-child(3)::before {
+        background-image: url(../img/location-3.svg);
+        width: 49px;
+        height: 44px;
+    }
+}
+
+.location__inner-title {
+    font-family: $font;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333d4b;
+    margin-bottom: 24px;
+}
+
+.location__inner-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+    opacity: 0.85;
+}
+
+@media only screen and (max-width: 836px) {
+    #location {
+        margin-bottom: 144px;
+    }
+
+    .location__container {
+        max-width: 688px;
+    }
+
+    .location__item {
+        max-width: 223px;
+    }
+
+    .location__inner-title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 21px;
+    }
+}
+
+@media only screen and (max-width: 679px) {
+    #location {
+        margin-bottom: 120px;
+    }
+
+    .location__container {
+        max-width: 367px;
+        text-align: center;
+    }
+
+    .location__list {
+        display: block;
+    }
+
+    .location__item {
+        max-width: 367px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .location__inner-title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 22px;
+    }
+}
